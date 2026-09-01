@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fce7f3;
+}
+
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  background: rgba(244, 114, 182, 0.25);
+  cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+  transition: background 0.15s ease;
+}
+
+.resizer:hover, .active-resizer {
+  background: #f472b6 !important;
+  width: 8px;
+}
